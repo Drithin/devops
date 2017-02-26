@@ -53,6 +53,13 @@
         </pluginRepository>
     </pluginRepositories>
 
+   <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>localhost-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+   </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -191,6 +198,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+	 <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>2.7</version>
+    </plugin>
 
         </plugins>
 		<finalName>addressbook</finalName>
