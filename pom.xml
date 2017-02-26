@@ -62,7 +62,7 @@
    <snapshotRepository>
         <id>snapshots</id>
         <name>plugins-snapshot</name>
-        <url>http://serverip:8081/artifactory/plugins-snapshot-local</url>
+        <url>http://localhost:8081/artifactory/plugins-snapshot-local</url>
     </snapshotRepository>
    </distributionManagement>
 
